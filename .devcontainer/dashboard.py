@@ -9,7 +9,6 @@ from scipy import stats
 def load_data():
     # Ganti path dengan lokasi dataset Anda
     return pd.read_csv('day.csv')
-    return pd.read_csv('hour.csv')
 
 day = load_data()
 
