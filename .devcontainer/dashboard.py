@@ -5,12 +5,8 @@ import seaborn as sns
 from scipy import stats
 
 # Load dataset
-@st.cache
-def load_data():
-    # Ganti path dengan lokasi dataset Anda
-    return pd.read_csv('day.csv')
-
-day = load_data()
+day_df = pd.read_csv("dashboard/day.csv")
+hour_df = pd.read_csv("dashboard/hour.csv")
 
 # Judul aplikasi
 st.title("Analisis Penyewaan Sepeda di Pecatu Bicycle")
